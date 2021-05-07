@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+
+{%block title%}CONTACT{%endblock%}
+
+{%block content%} 
+
+<form method="POST">
+{{form.hidden_tag()}}
+{{form.name.label}} {{form.name()}}
+{{form.number.label}}{{form.number()}}
+{{form.submit()}}
+
+</form>
+
+
+
+
+{%endblock%}
